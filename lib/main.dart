@@ -3,6 +3,8 @@ import 'package:local_notification/notifications/NotificationApi.dart';
 import 'package:local_notification/secondpage.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  Firebase.initializeApp();
   runApp(const MyApp());
   
 }
